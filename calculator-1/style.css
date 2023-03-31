@@ -2,7 +2,7 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   background-color: #ecf0f3;
+   background-color: #ec2c2c52;
    font-family: sans-serif;
    outline: none; 
 }
@@ -27,8 +27,8 @@ input{
     width: 200px;
     background-color: #ecf0f3;
     box-shadow: inset -5px -5px 12px #ffffff,
-                      5px 5px 12px rgba(0, 0, 0, .16);
-    border: none;
+                      5px 5px 12px rgba(0, 0, 0, 0.16);
+    border:none;
     border-radius: 30px;
     color: rgb(70, 70, 70);
     font-size: 50px;
@@ -51,7 +51,7 @@ button{
 }
 .equal{
     width: 95px;
-    margin: 10px;
+    margin: 8px;
     border-radius: 40px;
     background-color: #ecf0f3;
     box-shadow: inset -5px -5px 12px #ffffff,
