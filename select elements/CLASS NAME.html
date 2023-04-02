@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Name</title>
+    <style>
+        button{
+            background-color: black;
+            color: white;
+
+        }
+    </style>
+</head>
+<body>
+    <button class="black blue" onclick="blue()">blue</button>
+    <button class="black green" onclick="green()">green</button>
+    <button class="black red" onclick="red()">red</button> 
+    <button class="black" onclick="reset">reset</button>
+</body>
+</html> 
+<script>
+    var all = document.getElementsByClassName("black");
+    function blue(){
+        document.getElementsByClassName("black blue")[0].style.backgroundcolor = "blue";
+    }
+    function green(){ 
+        document.getElementsByClassName("black green")[0].style.backgroundcolor = "green";
+    }
+    function red(){
+        document.getElementsByClassName("black red")[0].style.backgroundcolor = "red";
+    }
+    function reset(){
+        for(i=0; i<all.length; i++){
+            all[i].style.backgroundcolor="black";
+        }
+    }
+</script>

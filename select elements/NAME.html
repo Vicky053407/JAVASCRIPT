@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name</title>
+</head>
+<body>
+    <input type="radio" name="num" value="one">2 &nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="radio" name="num" value="two">3
+    <input type="radio" name="num" value="three">1 &nbsp;&nbsp;&nbsp;&nbsp;
+    <br><br>
+    <button id="btn" onclick="calc()">click</button>
+    <h3 id="output"></h3>
+</body>
+</html>
+<script>
+    var output = document.getElementsById("output");
+    var btn = document.getElementsById("btn");
+    function calc(){
+        var a = document.getElementsByName("num");
+        a.foreach((num)=>{
+        if (num.checked){
+            output.innertext = `${"you clicked"+num.value}`;
+        }
+        });
+    }
+
+</script>
