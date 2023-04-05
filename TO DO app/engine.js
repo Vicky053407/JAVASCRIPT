@@ -1,8 +1,8 @@
 //getting all required elements
 
-const inputField = document.querySelector(".input-field textarea");
-todoList = document.querySelector(".todolist");
-pendingNum = document.querySelector(".pending-num");
+const inputField = document.querySelector(".input-field textarea"),
+todoList = document.querySelector(".todolist"),
+pendingNum = document.querySelector(".pending-num"),
 clearButton = document.querySelector(".clear-button");
 
 //we will call this function while adding, deleting and checking - unchecking the task
