@@ -10,7 +10,7 @@ function printDate(){
     var month = date.getMonth()+1;
     var year = date.getFullYear();
     todayDate.innerHTML = day+"/"+month+"/"+year;
-}
+}  
 printDate();
 
 function printDay() {
@@ -30,9 +30,11 @@ function printTime(){
     if(hour == 0){
         hour = 12;
     }
-    if(hour > 12){
-        hour = hour - 12;
+    else{
         period = "PM";
+    if(hour>12){
+        hour = hour - 12;
+    }
     }
     if(min < 10){
         min = "0"+min;
@@ -44,4 +46,4 @@ function printTime(){
     document.querySelector(".time").innerHTML = time;
     setTimeout(printTime, 1000);
 }
-printTime()
+printTime();

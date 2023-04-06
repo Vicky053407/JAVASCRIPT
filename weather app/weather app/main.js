@@ -53,7 +53,7 @@ async function search(){
     name.innerhtml = info.name;
     temp.innerHTML = info.main.temp;
     wind.innerHTML = info.wind.speed;
-    img.src=https;//openweathermap.org/img/wn/${info.weather[0].icon}@2x.png;
+    img.src=https//openweathermap.org/img/wn/${info.weather[0].icon}@2x.png;
     pres.innerHTML = info.main.pressure;
     hum.innerHTML = info.main.humidity;
 
