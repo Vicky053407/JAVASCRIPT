@@ -15,4 +15,4 @@ function backspace() {
 function calculate() {
   var result = eval(input.value);
   input.value = result;
-}
+}   
